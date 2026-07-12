@@ -50,6 +50,25 @@ reword fcaf8e7 Add files via upload
 ```
 Simpan dan tutup editor tersebut (Jika menggunakan VS Code cukup *save* & *close*, jika menggunakan Vim tekan `Esc` lalu ketik `:wq` dan `Enter`).
 Git akan membuka jendela editor baru satu per satu untuk setiap commit yang Anda tandai dengan `reword`. Hapus teks pesan lama, ketik pesan baru Anda, lalu simpan dan tutup kembali editornya.
+
+
+
+Ambil kembali file yang Anda titipkan tadi:
+```
+git stash pop
+```
+
+Masukkan perubahan ke commit tersebut:
+```
+git add .
+git commit --amend
+```
+
+Selesaikan rebase
+```
+git rebase --continue
+```
+
 Setelah selesai, perbarui riwayat di GitHub karena Anda telah mengubah struktur riwayat Git:
 ```
 git push origin main --force
