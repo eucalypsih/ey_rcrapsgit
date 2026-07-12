@@ -17,11 +17,11 @@ Mari kita selesaikan masalah ini dengan memilih salah satu dari **dua jalan kelu
 Pilihan A: Simpan perubahan Anda saat ini ke dalam Rebase (Rekomendasi)
 
 Jika file yang menyebabkan *error* tersebut memang merupakan file yang ingin Anda masukkan ke dalam commit lama (`8743cf5`), maka simpan dulu perubahan tersebut ke tempat penitipan sementara (`stash`):
-1. Titipkan perubahan Anda saat ini:
+Titipkan perubahan Anda saat ini:
 ```
 git stash
 ```
-2. Jalankan kembali perintah rebase sekarang (pasti berhasil):
+Jalankan kembali perintah rebase sekarang (pasti berhasil):
 Mengubah Beberapa Commit Sekaligus (Commit Lama)
 Jika Anda ingin mengubah commit yang sudah tertimbun (misalnya commit `7050d06`, `8743cf5`, dst.), Anda harus menggunakan fitur **Interactive Rebase**.
 Jalankan perintah rebase interaktif untuk beberapa commit ke belakang. Misalnya, untuk melihat 6 commit terakhir `git rebase -i HEAD~6`
